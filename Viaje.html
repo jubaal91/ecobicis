@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Tiempo de Viaje Promedio</title>
+  <title>Mapa de Calor</title>
   <meta name="generator" content="Google Web Designer 7.0.1.1101">
   <link href="gwdiframe_style.css" rel="stylesheet" data-version="5" data-exports-type="gwd-iframe">
   <style type="text/css" id="gwd-text-style">
@@ -100,13 +100,63 @@
     .gwd-iframe-1hr3 {
       position: absolute;
       border: none;
-      top: 94px;
       left: -2px;
-      width: 1360px;
-      height: 619px;
-      transform-origin: -1999.2px -172.436px 0px;
+      transform-origin: -934.907px -172.436px 0px;
+      width: 640px;
+      height: 589px;
+      top: 123px;
+      background-image: none;
+      background-color: rgb(234, 236, 234);
     }
-    .gwd-span-19hy {
+    .gwd-iframe-yino {
+      position: absolute;
+      border: none;
+      width: 640px;
+      left: 718px;
+      top: 124px;
+      height: 589px;
+      transform-origin: 324.507px 294.333px 0px;
+      background-image: none;
+      background-color: rgb(234, 236, 234);
+    }
+    .gwd-p-1wan {
+      position: absolute;
+      left: 450px;
+      top: 31px;
+    }
+    .gwd-p-16te {
+      font-weight: bold;
+      font-size: 25px;
+      left: 953px;
+      top: 95px;
+      color: rgb(0, 0, 0);
+    }
+    .gwd-span-anbw {
+      position: absolute;
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+      top: 94px;
+      left: 205px;
+    }
+    .gwd-rect-1sp3 {
+      position: absolute;
+      width: 1358px;
+      left: 0px;
+      box-sizing: border-box;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(0, 0, 0);
+      background-image: none;
+      background-color: rgb(234, 236, 234);
+      top: 80px;
+      height: 600px;
+      transform-origin: 679px 300.001px 0px;
+    }
+    .gwd-span-nkds {
+      color: rgb(0, 0, 0);
+    }
+    .gwd-span-1nmw {
       font-family: Montserrat;
     }
   </style>
@@ -120,15 +170,21 @@
       // GWD Predefined Function
       gwd.actions.gwdIframe.setUrl('gwd-iframe_1', 'links/ecobici_tiempos_hist.html');
     };
+    gwd.auto_Gwd_iframe_2Iframeload = function(event) {
+      // GWD Predefined Function
+      gwd.actions.gwdIframe.setUrl('gwd-iframe_2', 'links/genero_ecobici.html');
+    };
   </script>
   <script type="text/javascript" gwd-events="registration">
     // Código de soporte para el manejo de eventos en Google Web Designer
     // Este bloque de secuencia de comandos se genera automáticamente. No lo modifique.
     gwd.actions.events.registerEventHandlers = function(event) {
       gwd.actions.events.addHandler('gwd-iframe_1', 'iframeload', gwd.auto_Gwd_iframe_1Iframeload, false);
+      gwd.actions.events.addHandler('gwd-iframe_2', 'iframeload', gwd.auto_Gwd_iframe_2Iframeload, false);
     };
     gwd.actions.events.deregisterEventHandlers = function(event) {
       gwd.actions.events.removeHandler('gwd-iframe_1', 'iframeload', gwd.auto_Gwd_iframe_1Iframeload, false);
+      gwd.actions.events.removeHandler('gwd-iframe_2', 'iframeload', gwd.auto_Gwd_iframe_2Iframeload, false);
     };
     document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
     document.addEventListener("unload", gwd.actions.events.deregisterEventHandlers);
@@ -136,22 +192,28 @@
 </head>
 
 <body class="htmlNoPages">
+  <svg data-gwd-shape="rectangle" class="gwd-rect-1sp3"></svg>
   <a href="index.html" style="color: rgb(0, 0, 0);" class="">
     <span class="gwd-span-ng1d">Inicio&nbsp;</span>
   </a>
   <a href="Equipo.html" style="color: rgb(0, 0, 0);" class="">
     <span class="gwd-span-lgu1">Equipo</span>
-  </a>
-  <span class="gwd-span-xcnp">
+    <!--+ 3.a-->
+    <span class="gwd-span-xcnp"><span class="gwd-span-1nmw">Información</span><br>
     
-  <span class="gwd-span-19hy">Información</span><br></span>
-  <svg data-gwd-shape="line" preserveAspectRatio="none" viewBox="0 0 3 18" class="gwd-line-1lkv gwd-svg-1rj0">
-    <line x1="1.5" x2="1.5" y1="0" y2="18"></line>
-  </svg>
-  <svg data-gwd-shape="line" preserveAspectRatio="none" viewBox="0 0 3 18" class="gwd-line-1lkv gwd-svg-5ej1">
-    <line x1="1.5" x2="1.5" y1="0" y2="18"></line>
-  </svg>
-  <gwd-iframe id="gwd-iframe_1" source="" class="gwd-iframe-1hr3"></gwd-iframe>
+    </span>
+    <svg data-gwd-shape="line" preserveAspectRatio="none" viewBox="0 0 3 18" class="gwd-line-1lkv gwd-svg-1rj0">
+      <line x1="1.5" x2="1.5" y1="0" y2="18"></line>
+    </svg>
+    <svg data-gwd-shape="line" preserveAspectRatio="none" viewBox="0 0 3 18" class="gwd-line-1lkv gwd-svg-5ej1">
+      <line x1="1.5" x2="1.5" y1="0" y2="18"></line>
+    </svg>
+    <gwd-iframe id="gwd-iframe_1" source="" class="gwd-iframe-1hr3"></gwd-iframe>
+    <gwd-iframe id="gwd-iframe_2" source="" class="gwd-iframe-yino"></gwd-iframe>
+    <p class="gwd-p-1wan gwd-p-16te">Genero&nbsp;</p><span class="gwd-span-anbw"><span class="gwd-span-nkds">Tiempos de Viaje</span><br>
+    
+    </span>
+  </a>
 </body>
 
 </html>
