@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.4.0.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="ba478475-09f7-42b2-aac1-a6a33659635a" data-root-id="28145"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="28811">
+          {"4a21b6b5-67c1-4589-87b4-f10c0cef8402":{"roots":{"references":[{"attributes":{"below":[{"id":"28156","type":"CategoricalAxis"}],"center":[{"id":"28159","type":"Grid"},{"id":"28164","type":"Grid"}],"left":[{"id":"28160","type":"LinearAxis"}],"plot_height":350,"plot_width":400,"renderers":[{"id":"28182","type":"GlyphRenderer"}],"title":{"id":"28146","type":"Title"},"toolbar":{"id":"28171","type":"Toolbar"},"x_range":{"id":"28148","type":"FactorRange"},"x_scale":{"id":"28152","type":"CategoricalScale"},"y_range":{"id":"28150","type":"DataRange1d"},"y_scale":{"id":"28154","type":"LinearScale"}},"id":"28145","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"28152","type":"CategoricalScale"},{"attributes":{"data_source":{"id":"28144","type":"ColumnDataSource"},"glyph":{"id":"28180","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"28181","type":"VBar"},"selection_glyph":null,"view":{"id":"28183","type":"CDSView"}},"id":"28182","type":"GlyphRenderer"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"28165","type":"PanTool"},{"id":"28166","type":"WheelZoomTool"},{"id":"28167","type":"BoxZoomTool"},{"id":"28168","type":"SaveTool"},{"id":"28169","type":"ResetTool"},{"id":"28170","type":"HelpTool"},{"id":"28186","type":"HoverTool"}]},"id":"28171","type":"Toolbar"},{"attributes":{},"id":"28165","type":"PanTool"},{"attributes":{},"id":"28157","type":"CategoricalTicker"},{"attributes":{"factors":["Mujeres","Hombres"],"palette":["#3288bd","#99d594","#e6f598","#fee08b","#fc8d59","#d53e4f"]},"id":"28178","type":"CategoricalColorMapper"},{"attributes":{"callback":null,"tooltips":[["G\u00e9nero","@genero"],["Usuario","@counts{0,0}"]]},"id":"28186","type":"HoverTool"},{"attributes":{},"id":"28168","type":"SaveTool"},{"attributes":{"callback":null,"factors":["Mujeres","Hombres"]},"id":"28148","type":"FactorRange"},{"attributes":{},"id":"28166","type":"WheelZoomTool"},{"attributes":{"callback":null,"data":{"counts":[546477,1611951],"genero":["Mujeres","Hombres"]},"selected":{"id":"28684","type":"Selection"},"selection_policy":{"id":"28683","type":"UnionRenderers"}},"id":"28144","type":"ColumnDataSource"},{"attributes":{"overlay":{"id":"28682","type":"BoxAnnotation"}},"id":"28167","type":"BoxZoomTool"},{"attributes":{},"id":"28154","type":"LinearScale"},{"attributes":{"grid_line_color":null,"ticker":{"id":"28157","type":"CategoricalTicker"}},"id":"28159","type":"Grid"},{"attributes":{},"id":"28170","type":"HelpTool"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"counts"},"width":{"value":0.9},"x":{"field":"genero"}},"id":"28181","type":"VBar"},{"attributes":{},"id":"28169","type":"ResetTool"},{"attributes":{},"id":"28679","type":"CategoricalTickFormatter"},{"attributes":{},"id":"28684","type":"Selection"},{"attributes":{},"id":"28184","type":"NumeralTickFormatter"},{"attributes":{},"id":"28161","type":"BasicTicker"},{"attributes":{},"id":"28683","type":"UnionRenderers"},{"attributes":{"text":"Usuarios Totales por G\u00e9nero (agosto, sept., octubre)"},"id":"28146","type":"Title"},{"attributes":{"formatter":{"id":"28679","type":"CategoricalTickFormatter"},"ticker":{"id":"28157","type":"CategoricalTicker"}},"id":"28156","type":"CategoricalAxis"},{"attributes":{"dimension":1,"ticker":{"id":"28161","type":"BasicTicker"}},"id":"28164","type":"Grid"},{"attributes":{"fill_color":{"field":"genero","transform":{"id":"28178","type":"CategoricalColorMapper"}},"line_color":{"value":"white"},"top":{"field":"counts"},"width":{"value":0.9},"x":{"field":"genero"}},"id":"28180","type":"VBar"},{"attributes":{"callback":null,"end":2000000,"start":0},"id":"28150","type":"DataRange1d"},{"attributes":{"formatter":{"id":"28184","type":"NumeralTickFormatter"},"ticker":{"id":"28161","type":"BasicTicker"}},"id":"28160","type":"LinearAxis"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"28682","type":"BoxAnnotation"},{"attributes":{"source":{"id":"28144","type":"ColumnDataSource"}},"id":"28183","type":"CDSView"}],"root_ids":["28145"]},"title":"Bokeh Application","version":"1.4.0"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('28811').textContent;
+                  var render_items = [{"docid":"4a21b6b5-67c1-4589-87b4-f10c0cef8402","roots":{"28145":"ba478475-09f7-42b2-aac1-a6a33659635a"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
